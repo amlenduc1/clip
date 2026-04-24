@@ -1,0 +1,9 @@
+# requirements.txt for CLIP model service
+torch
+transformers
+Pillow
+fastapi
+uvicorn
+python-multipart
+opencv-python-headless
+numpy

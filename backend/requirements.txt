@@ -1,0 +1,8 @@
+# requirements.txt for backend API
+fastapi
+uvicorn
+requests
+opensearch-py
+Pillow
+numpy
+python-multipart
