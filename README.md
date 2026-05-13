@@ -6,15 +6,15 @@ A dual-mode defect classification system for Scanning Electron Microscope (SEM) 
 
 ##  Problem Statement
 
-### The Challenge in Modern Semiconductor Manufacturing
+### The Challenge in Modern Manufacturing
 
-In today's advanced manufacturing landscape—particularly in semiconductor fabrication, MEMS devices, and nanomaterial production—the **Scanning Electron Microscope (SEM)** serves as the cornerstone imaging instrument for determining critical surface attributes including compositions, morphologies, and geometric defects at the nanometer scale. SEM technology overcomes the fundamental diffraction limits of optical microscopy, achieving magnifications up to 1,000,000× and resolutions below 1 nanometer, making it indispensable for quality control in processes where even atomic-level defects can cascade into catastrophic yield loss.
+In today's advanced manufacturing , MEMS devices, and nanomaterial production—the **Scanning Electron Microscope (SEM)** serves as the cornerstone imaging instrument for determining critical surface attributes including compositions, morphologies, and geometric defects at the nanometer scale. SEM technology overcomes the fundamental diffraction limits of optical microscopy, achieving magnifications up to 1,000,000× and resolutions below 1 nanometer, making it indispensable for quality control in processes where even atomic-level defects can cascade into catastrophic yield loss.
 
 ### Traditional CNN-Based Approach: Limitations at Scale
 
 Historically, data scientists and process engineers have deployed **Convolutional Neural Networks (CNNs)** for Automated Defect Classification (ADC) systems. While CNNs have demonstrated success in controlled environments, they face critical limitations in real-world manufacturing:
 
-1. **Data Hunger Problem**: CNNs require thousands of labeled examples per defect class. In semiconductor fabs, where new defect modes emerge with each process node shrink (e.g., 7nm → 5nm → 3nm), collecting sufficient labeled data for rare defects (e.g., stacking faults, micro-voids, or contamination particles) is prohibitively expensive and time-consuming.
+1. **Data Hunger Problem**: CNNs require thousands of labeled examples per defect class. In factories, where new defect modes emerge with each process node , collecting sufficient labeled data for rare defects (e.g., stacking faults, micro-voids, or contamination particles) is prohibitively expensive and time-consuming.
 
 2. **Catastrophic Forgetting**: When retraining CNNs to recognize new defect types (e.g., novel metallization defects in advanced packaging), they often degrade performance on previously learned classes, requiring complex continual learning strategies.
 
@@ -60,7 +60,7 @@ Uses CLIP's vision encoder with k-NN similarity search on indexed reference imag
 
 - **Unified Embedding Space**: All defect types—whether described by text or images—are mapped into a shared 512-dimensional vector space, enabling similarity-based retrieval, anomaly detection, and intelligent defect clustering for root-cause analysis.
 
-This approach represents a paradigm shift from **discriminative learning** (CNN: "learn decision boundaries between known classes") to **metric learning** (CLIP: "measure semantic similarity in embedding space"), making ADC systems more agile, scalable, and aligned with the rapid innovation cycles of modern semiconductor manufacturing.
+This approach represents a paradigm shift from **discriminative learning** (CNN: "learn decision boundaries between known classes") to **metric learning** (CLIP: "measure semantic similarity in embedding space"), making ADC systems more agile, scalable, and aligned with the rapid innovation cycles of modern manufacturing.
 
 ---
 
