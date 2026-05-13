@@ -1,6 +1,6 @@
-# SEM Defect Image Classification using CLIP
+# Image Classification using CLIP
 
-A dual-mode defect classification system for Scanning Electron Microscope (SEM) images using OpenAI's CLIP (Contrastive Language-Image Pre-training) model, supporting both **zero-shot** (text-based) and **few-shot** (image similarity) classification approaches.
+A dual-mode defect classification system for images using OpenAI's CLIP (Contrastive Language-Image Pre-training) model, supporting both **zero-shot** (text-based) and **few-shot** (image similarity) classification approaches.
 
 ---
 
@@ -8,7 +8,7 @@ A dual-mode defect classification system for Scanning Electron Microscope (SEM) 
 
 ### The Challenge in Modern Manufacturing
 
-In today's advanced manufacturing , MEMS devices, and nanomaterial production—the **Scanning Electron Microscope (SEM)** serves as the cornerstone imaging instrument for determining critical surface attributes including compositions, morphologies, and geometric defects at the nanometer scale. SEM technology overcomes the fundamental diffraction limits of optical microscopy, achieving magnifications up to 1,000,000× and resolutions below 1 nanometer, making it indispensable for quality control in processes where even atomic-level defects can cascade into catastrophic yield loss.
+In today's advanced manufacturing , MEMS devices, and nanomaterial production—the **Scanning Electron Microscope** serves as the cornerstone imaging instrument for determining critical surface attributes including compositions, morphologies, and geometric defects at the nanometer scale.
 
 ### Traditional CNN-Based Approach: Limitations at Scale
 
